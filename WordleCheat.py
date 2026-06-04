@@ -4,7 +4,7 @@ from urllib import request
 # This imports everything and the code below gets the time
 dt = datetime.now()
 
-#Creates the link and formates dt
+#Creates the link and formats dt
 
 link = "https://www.nytimes.com/svc/wordle/v2/" + dt.strftime("%Y-%m-%d") + ".json"
 
