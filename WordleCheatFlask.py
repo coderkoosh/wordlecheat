@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
+def wordlecheat():
     dt = datetime.now()
     link = "https://www.nytimes.com/svc/wordle/v2/" + dt.strftime("%Y-%m-%d") + ".json"
     urlopen = request.urlopen(link)
