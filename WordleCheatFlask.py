@@ -13,5 +13,6 @@ def wordlecheat():
     urlopen = request.urlopen(link)
     data = urlopen.read()
     js = json.loads(data)
+    debugger = dt.strftime("%Y-%m-%d")
     #print(f"Solution: \n{js['solution']}\nEditor: \n{js['editor']}")    
-    return f"<p>Solution: {js['solution']} Editor: {js['editor']}<p/>"
+    return f"<p>Solution: {js['solution']} Editor: {js['editor']} Debug: {debugger}<p/>"
